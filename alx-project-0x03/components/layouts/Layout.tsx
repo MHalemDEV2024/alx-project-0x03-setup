@@ -10,7 +10,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      {/* Add padding top here to avoid content hiding behind fixed header */}
+      <main className="pt-24">  
+        {children}
+      </main>
       <Footer />
     </>
   );
