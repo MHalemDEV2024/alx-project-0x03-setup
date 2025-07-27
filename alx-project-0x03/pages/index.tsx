@@ -2,7 +2,7 @@ import Button from "@/components/common/Button";
 import { useRouter } from "next/router";
 
 const Home = () => {
-  const router = useRouter();  // Ensure this line exists
+  const router = useRouter();  // Use useRouter hook for routing
 
   // Imperative routing with useRouter
   const routeToNextPage = ({ pageRoute }: { pageRoute: string }) => {
@@ -28,4 +28,5 @@ const Home = () => {
   );
 };
 
+// Make sure this export is present to define the Home component as the default export
 export default Home;
