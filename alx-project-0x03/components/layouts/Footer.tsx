@@ -1,9 +1,9 @@
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; 
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="w-full max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="text-xl font-bold mb-4">Splash App</h3>
           <p className="text-gray-400 mb-4">
@@ -36,13 +36,28 @@ const Footer: React.FC = () => {
         <div>
           <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
           <div className="flex space-x-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition duration-300"
+            >
               <FaFacebook size={24} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition duration-300"
+            >
               <FaTwitter size={24} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition duration-300">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition duration-300"
+            >
               <FaInstagram size={24} />
             </a>
           </div>
@@ -50,6 +65,6 @@ const Footer: React.FC = () => {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
